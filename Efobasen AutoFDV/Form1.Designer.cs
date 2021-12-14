@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label_logo = new System.Windows.Forms.Label();
             this.btn_hent_fdv = new System.Windows.Forms.Button();
             this.btn_om_autofdv = new System.Windows.Forms.Button();
@@ -39,10 +40,10 @@
             // label_logo
             // 
             this.label_logo.AutoSize = true;
-            this.label_logo.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_logo.Font = new System.Drawing.Font("Segoe UI Emoji", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_logo.Location = new System.Drawing.Point(32, 9);
             this.label_logo.Name = "label_logo";
-            this.label_logo.Size = new System.Drawing.Size(702, 106);
+            this.label_logo.Size = new System.Drawing.Size(704, 106);
             this.label_logo.TabIndex = 0;
             this.label_logo.Text = "Efobasen AutoFDV";
             // 
@@ -88,12 +89,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(768, 266);
+            this.ClientSize = new System.Drawing.Size(756, 249);
             this.Controls.Add(this.btn_om_autofdv);
             this.Controls.Add(this.btn_hent_fdv);
             this.Controls.Add(this.groupBoxelnr);
             this.Controls.Add(this.label_logo);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Efobasen AutoFDV";
             this.groupBoxelnr.ResumeLayout(false);
